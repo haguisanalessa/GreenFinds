@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us / GreenFinds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <header class="navigation-container">
+    
+    <button type="button" class="menu-icon" 
+    id="menuBtn" aria-label="Toggle navigation">☰</button>
+
+    <nav class="navbar" id="sidebarNav" aria-label="Main Navigation">
+    <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">HOME</a></li>
+
+        <li class="nav-item">
+            <a href="explore.html">EXPLORE</a>
+            <ul class="dropdown">
+            <li><a href="explore.html#mangroverestoration">Mangrove Restoration</a></li>
+            <li><a href="explore.html#marineconservation">Marine Conservation</a></li>
+            <li><a href="explore.html#waterprotection">Water Protection</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a href="aboutus.html">ABOUT US</a>
+            <ul class="dropdown">
+            <li><a href="aboutus.html#whoweare">Who We Are</a></li>
+            <li><a href="aboutus.html#ourstory">Our Story</a></li>
+            <li><a href="aboutus.html#ourmission">Our Mission</a></li>
+            </ul>     
+        </li>
+
+        <li class="nav-item">
+            <a href="takeaction.html">TAKE ACTION</a>
+            <ul class="dropdown">
+            <li><a href="takeaction.html#sustainabledaily">Sustainable Daily Practices</a></li>
+            <li><a href="takeaction.html#individualactions">Individual Environmental Actions</a></li>
+            <li><a href="takeaction.html#communityparticipation">Community Participation</a></li>
+            </ul>
+        </li>
+    </ul>  
+    </nav>
+
+    <img src="GREENFINDSLOGO.png" alt="GreenFinds Logo" class="logo" />
+
+</header>
+
+
+<main id="mainContent">
+    <section class="about-hero">
+        <h1>ABOUT GREENFINDS</h1>
+        <p>Building awareness today for a healthier coastal environment tomorrow.</p>
+    </section>
+
+
+    <section class="whoweare">
+    <div class="whowearecontent">
+        <div class="whowearetext">
+            <h3>Who We Are</h3>
+            <p>Greenfinds is an educational website created to raise awareness about coastal ecosystems and help people understand their importance to the environment. 
+            It provides information about mangroves, oceans, and other aquatic environments, including their ecological value and the need for their protection.
+            The website is primarily intended for students and teenagers, but it is also open to anyone interested in learning about the environment. 
+            Through its educational content, Greenfinds aims to make information about these ecosystems easier to understand and encourage visitors 
+            to become more aware of the environmental challenges that affect them.
+            </p>
+            </div>
+    </div>
+</section>
+
+    <section class="ourstory">
+    <div class="ourstory-content">
+        <div class="ourstory-text">
+        <h3>Our Story</h3>
+            <p>Greenfinds started as an academic website project inspired by the importance of coastal ecosystems and 
+            the environmental challenges they continue to face. These ecosystems provide habitats for various marine 
+            and coastal organisms, support biodiversity, and contribute to maintaining environmental balance. 
+            Despite their importance, many people may not fully understand the role these environments play or the threats that put them at risk.
+            This project was developed with the belief that environmental awareness begins with understanding. 
+            By providing accessible and informative content, Greenfinds hopes to give students, teenagers, and other interested individuals 
+            an opportunity to learn more about coastal ecosystems. Through this initiative, the website aims to encourage 
+            greater appreciation for nature and a better understanding of why these environments deserve protection.
+            </p>
+            </div>
+    </div>
+</section>
+
+    <section class="ourmission">
+    <div class="ourmission-content">
+    <div class="ourmission-text">
+        <h3>Our Mission</h3>
+            <p>Greenfinds aims to provide accessible and informative educational content that promotes awareness of coastal ecosystems, 
+            their ecological importance, and the environmental challenges they face. It seeks to help students, teenagers, 
+            and other visitors develop a better understanding of these environments and the importance of protecting them.
+            Through this website, we hope to encourage responsible attitudes toward the environment by sharing knowledge about coastal ecosystems 
+            and practical ways people can contribute to their protection. Our goal is to make environmental information easier to access 
+            and understand, especially for younger audiences.
+            </p>
+            </div>
+    </div>
+</section>
+    
+    <section class="about-closing">
+        <h2>A Better Understanding Begins with Awareness.</h2>
+        <p>Understanding the importance of our coastal ecosystems is an important step toward protecting them. 
+        Through education and awareness, we can help people recognize the value of these environments and encourage more responsible choices. 
+        Every opportunity to learn brings us closer to a future where coastal ecosystems are better understood, valued, and protected.
+        </p>
+</section>
+</main>
+
+
+ <footer>
+        <p>&copy; 2026 GreenFinds. All rights reserved.</p>
+    </footer>
+
+<script>
+    const menuBtn = document.getElementById("menuBtn");
+    const sidebarNav = document.getElementById("sidebarNav");
+    const mainContent = document.getElementById("mainContent");
+
+    // Toggle sidebar visibility and shift main content when button is clicked
+    menuBtn.addEventListener("click", function () {
+        sidebarNav.classList.toggle("open");
+        menuBtn.classList.toggle("open");
+
+        if (mainContent) {
+            mainContent.classList.toggle("shifted");
+        }
+    });
+</script>
+
+</body>
+</html>
