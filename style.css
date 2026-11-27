@@ -185,10 +185,7 @@ body {
     transition: background-color 0.3s ease;
 }
 /* TYPOGRAPHY */
-h1,
 h2,
-h3,
-p,
 .cardtitle {
     font-family: Georgia, 'Times New Roman', serif;
     color: #294a35;
