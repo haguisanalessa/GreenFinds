@@ -133,6 +133,15 @@ body {
     color: #ffffff;
     background-color: rgba(56, 118, 83, 0.35);
 }
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* For sticky header */
+#mainContent [id] {
+    scroll-margin-top: 120px;
+}
 
 /* HERO SECTION */
 .hero-section {
